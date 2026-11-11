@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Student Information Portal</title>
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>MASINDE MULIRO UNIVERSITY</h1>
+        <h2>StudenT Portal</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#registration">Student Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+       
+
+        
+        <section id="about">
+            <h2>About Student Information Portal</h2>
+
+            <p>
+                The Student Information Portal is an online
+                platform designed to manage student information,
+                academic programmes and registration details.
+                It helps students access important academic
+                information and makes student record management
+                easier and more efficient.
+            </p>
+
+            <h3>Academic Programmes Offered</h3>
+
+            
+            <ul>
+                <li>Bachelor of Computer Science</li>
+                <li>Bachelor of Business Administration</li>
+                <li>Bachelor of Education</li>
+                <li>Bachelor of Information Technology</li>
+            </ul>
+        </section>
+
+        <section id="students">
+            <h2>Student Information Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Registration Number</th>
+                        <th>Programme</th>
+                        <th>Year of Study</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>32428271</td>
+                        <td>Lucy Mayienga</td>
+                        <td>COM/B/O1-O77/2025</td>
+                        <td>Computer Science</td>
+                        <td>Year 2</td>
+                    </tr>
+
+                    <tr>
+                        <td>37859678</td>
+                        <td>Mary Achieng</td>
+                        <td>BA/002/2025</td>
+                        <td>Business Administration</td>
+                        <td>Year 1</td>
+                    </tr>
+
+                    <tr>
+                        <td>4567890</td>
+                        <td>Peter Kamau</td>
+                        <td>ED/003/2025</td>
+                        <td>Education</td>
+                        <td>Year 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post"  id="studentForm">
+
+                <label for="fullname">Student Full Name:</label>
+                <input type="text" id="fullname"
+                       name="fullname"
+                       placeholder="Enter your full name"
+                       required>
+
+                <label for="regno">Registration Number:</label>
+                <input type="text" id="regno"
+                       name="regno"
+                       placeholder="Enter registration number"
+                       required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       require>
+                <label>Gender:</label>
+
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender"
+                               value="Male" required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender"
+                               value="Female">
+                        Female
+                    </label>
+                </div>
+
+                <label for="programme">Academic Programme:</label>
+
+                <select id="programme" name="programme" required>
+                    <option value="">Select Programme</option>
+                    <option value="Computer Science">
+                        Bachelor of Computer Science
+                    </option>
+                    <option value="Business Administration">
+                        Bachelor of Business Administration
+                    </option>
+                    <option value="Education">
+                        Bachelor of Education
+                    </option>
+                    <option value="Information Technology">
+                        Bachelor of Information Technology
+                    </option>
+                </select>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+
+            </form>
+            <div id="result"></div>
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 University Student Information Portal.
+           All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
